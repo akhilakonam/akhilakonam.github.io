@@ -8,7 +8,7 @@ axios.defaults.withCredentials = true;
 
 export default function App(props) {
     return (
-        <BrowserRouter history={history}>
+        <BrowserRouter basename={process.env.PUBLIC_URL} history={history}>
             <Routes>
               <Route path='/' element={<LandingPage/>} />
             </Routes>
